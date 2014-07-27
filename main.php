@@ -35,23 +35,8 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 
         <div class="wrapper group">
 
-            <?php if($showSidebar): ?>
-                <!-- ********** ASIDE ********** -->
-                <div id="dokuwiki__aside"><div class="pad aside include group">
-                    <h3 class="toggle"><?php echo $lang['sidebar'] ?></h3>
-                    <div class="content">
-                        <?php tpl_flush() ?>
-                        <?php tpl_includeFile('sidebarheader.html') ?>
-                        <?php tpl_include_page($conf['sidebar'], 1, 1) ?>
-                        <?php tpl_includeFile('sidebarfooter.html') ?>
-                    </div>
-                </div></div><!-- /aside -->
-            <?php endif; ?>
-
             <!-- ********** CONTENT ********** -->
             <div id="dokuwiki__content"><div class="pad group">
-
-                <div class="pageId"><span><?php echo hsc($ID) ?></span></div>
 
                 <div class="page group">
                     <?php tpl_flush() ?>
@@ -61,8 +46,6 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                     <!-- wikipage stop -->
                     <?php tpl_includeFile('pagefooter.html') ?>
                 </div>
-
-                <div class="docInfo"><?php tpl_pageinfo() ?></div>
 
                 <?php tpl_flush() ?>
             </div></div><!-- /content -->
