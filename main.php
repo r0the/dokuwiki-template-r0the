@@ -1,11 +1,12 @@
 <?php
 /**
- * DokuWiki Default Template 2012
+ * DokuWiki r0the Template
  *
- * @link     http://dokuwiki.org/template
+ * @link     https://www.dokuwiki.org/template:r0the
  * @author   Anika Henke <anika@selfthinker.org>
  * @author   Clarence Lee <clarencedglee@gmail.com>
- * @license  GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * @author   Stefan Rothe <info@stefan-rothe.ch>
+ * @license  GPL 2 (http://www.gnu.org/licenses/gpl2.html)
  */
 
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
