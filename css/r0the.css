@@ -104,6 +104,10 @@ td {
     border-style: none;
 }
 
+.dokuwiki div.table {
+    overflow-x: visible;
+}
+
 .dokuwiki table.inline tr:hover td {
     background: none;
 }
