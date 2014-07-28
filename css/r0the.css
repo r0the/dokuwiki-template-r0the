@@ -120,6 +120,7 @@ td {
 
 footer {
     border-top: 1px solid #606060;
+    padding-top: 1em;
     font-size: 0.714em; /* 10px (base: 14px) */
     width: 100%;
     text-align: center;
