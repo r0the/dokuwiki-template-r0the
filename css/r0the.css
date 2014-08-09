@@ -116,6 +116,11 @@ td {
     background: none;
 }
 
+.dokuwiki pre.code,
+.dokuwiki pre.file {
+    background-color: #DFD;
+}
+
 /*____________ footer ____________*/
 
 footer {
