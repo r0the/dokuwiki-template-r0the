@@ -121,6 +121,15 @@ td {
     background-color: #DFD;
 }
 
+#dw__toc {
+    float: right;
+    width: 200px;
+    margin-top: 1em;
+    background: transparent;
+    border: solid;
+    border-width: 1px;
+}
+
 /*____________ footer ____________*/
 
 footer {
