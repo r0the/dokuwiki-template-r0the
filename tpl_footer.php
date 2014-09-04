@@ -46,11 +46,12 @@ if (!empty($conf["useacl"])) {
     echo "&#160;]";
 } ?></nav>
 <div class="clearer"></div>
-<div class="licence"><?php tpl_license(''); ?></div>
-
+<div class="licence"><?php if ($customLicence == '') { tpl_license(''); } else { echo $customLicence; } ?></div>
     <div class="buttons">
         <?php
-            tpl_license('button', true, false, false); // license button, no wrapper
+            if ($customLicence == '') {
+                tpl_license('button', true, false, false); // license button, no wrapper
+            }
             $target = ($conf['target']['extern']) ? 'target="'.$conf['target']['extern'].'"' : '';
         ?>
         <a href="http://www.dokuwiki.org/donate" title="Donate" <?php echo $target?>><img

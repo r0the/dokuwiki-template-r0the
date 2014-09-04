@@ -14,6 +14,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
 $hasMenubar = page_findnearest(tpl_getConf('menubar'));
 $showMenubar = $hasMenubar && ($ACT=='show');
+$customLicence = tpl_getConf('custom_licence');
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>

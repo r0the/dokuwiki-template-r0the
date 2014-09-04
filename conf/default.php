@@ -6,4 +6,5 @@
  */
 
 $conf['menubar']  = 'menubar';
+$conf['custom_licence'] = '';
 

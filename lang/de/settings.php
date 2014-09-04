@@ -6,5 +6,6 @@
  */
 
 $lang['menubar'] = 'Name der Menü-Seite';
+$lang['custom_licence'] = 'Eigener Lizenztext';
 ?>
 

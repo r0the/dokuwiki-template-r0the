@@ -6,5 +6,5 @@
  */
 
 $meta['menubar']  = array('string');
-
+$meta['custom_licence'] = array('string');
 
