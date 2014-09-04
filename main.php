@@ -12,8 +12,8 @@
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 header('X-UA-Compatible: IE=edge,chrome=1');
 
-$hasSidebar = page_findnearest($conf['sidebar']);
-$showSidebar = $hasSidebar && ($ACT=='show');
+$hasMenubar = page_findnearest(tpl_getConf('menubar'));
+$showMenubar = $hasMenubar && ($ACT=='show');
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>
@@ -29,7 +29,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 <body>
     <!--[if lte IE 7 ]><div id="IE7"><![endif]--><!--[if IE 8 ]><div id="IE8"><![endif]-->
     <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?> <?php
-        echo ($showSidebar) ? 'showSidebar' : ''; ?> <?php echo ($hasSidebar) ? 'hasSidebar' : ''; ?>">
+        echo ($showMenubar) ? 'showMenubar' : ''; ?> <?php echo ($hasMenubar) ? 'hasMenubar' : ''; ?>">
 
         <?php include('tpl_header.php') ?>
 
