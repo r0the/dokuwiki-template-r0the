@@ -33,7 +33,7 @@ header {
     padding: 0;
     padding-top: 1cm;
     margin: 0;
-    margin-bottom: 2.5em;
+    margin-bottom: 0.5em;
     border-bottom: 1px solid #606060;
 }
 
@@ -68,23 +68,22 @@ header #logo {
     float: right;
 }
 
-header nav {
-    position: relative;
+nav.menubar {
     right: 0;
     font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: -20px;
     width: 100%;
     text-align: right;
 }
 
-header nav a.wikilink1 {
+nav.menubar a.wikilink1 {
     color: __text__ !important;
     text-decoration: none;
 }
 
-header nav a.wikilink1:link:hover,
-header nav a.wikilink1:visited:hover {
+nav.menubar a.wikilink1:link:hover,
+nav.menubar a.wikilink1:visited:hover {
     text-decoration: underline;
 }
 
