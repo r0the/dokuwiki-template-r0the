@@ -41,11 +41,9 @@ $customLicence = tpl_getConf('custom_licence');
 
                 <div class="page group">
                     <?php tpl_flush() ?>
-                    <?php tpl_includeFile('pageheader.html') ?>
                     <!-- wikipage start -->
                     <?php tpl_content() ?>
                     <!-- wikipage stop -->
-                    <?php tpl_includeFile('pagefooter.html') ?>
                 </div>
 
                 <?php tpl_flush() ?>
