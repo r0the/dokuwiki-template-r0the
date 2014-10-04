@@ -38,8 +38,8 @@ header {
 }
 
 header h1 {
-    font-family: @ini_title_font_family;
-    font-size: @ini_title_font_size;
+    font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
+    font-size: 40px;
     width: 100%;
     bottom: 0;
     padding: 0;
@@ -59,8 +59,8 @@ header h1 a:visited:active {
 }
 
 header p.claim {
-    font-family: @ini_tagline_font_family;
-    font-size: @ini_tagline_font_size;
+    font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
+    font-size: 18px;
     vertical-align: top;
 }
 
