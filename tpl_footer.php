@@ -51,6 +51,7 @@ if (!empty($conf["useacl"])) {
             } ?></nav>
             <div class="clearer"></div>
             <div class="licence"><?php if ($customLicence == '') { tpl_license(''); } else { echo $customLicence; } ?></div>
+            <?php if (tpl_getConf('footer_buttons')): ?>
             <div class="buttons">
                 <?php
                     if ($customLicence == '') {
@@ -68,5 +69,6 @@ if (!empty($conf["useacl"])) {
                     src="<?php echo tpl_basedir(); ?>images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
                 <a href="http://dokuwiki.org/" title="Driven by DokuWiki" <?php echo $target?>><img
                     src="<?php echo tpl_basedir(); ?>images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" /></a>
-            </div>
+            </div><?php endif; ?>
+
         </footer>
