@@ -7,5 +7,6 @@
 
 $lang['menubar'] = 'Name der Menü-Seite';
 $lang['custom_licence'] = 'Eigener Lizenztext';
+$lang['footer_start_link'] = 'Link auf Startseite im Fußbereich anzeigen'
 ?>
 

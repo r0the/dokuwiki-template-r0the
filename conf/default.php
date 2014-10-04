@@ -7,4 +7,5 @@
 
 $conf['menubar']  = 'menubar';
 $conf['custom_licence'] = '';
+$conf['footer_start_link'] = false;
 

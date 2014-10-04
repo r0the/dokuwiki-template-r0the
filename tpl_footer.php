@@ -21,6 +21,10 @@ if (!empty($conf["useacl"])) {
         <footer>
             <nav class="footer_actions_left"><?php
                 echo "[&#160;";
+                if (tpl_getConf('footer_start_link')) {
+                    tpl_link(wl(), 'Startseite');
+                    echo "&#160;|&#160;";
+                }
                 tpl_actionlink("top");
                 if (actionOK("index")) {
                     echo "&#160;|&#160;";

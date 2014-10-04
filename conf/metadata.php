@@ -7,4 +7,4 @@
 
 $meta['menubar']  = array('string');
 $meta['custom_licence'] = array('string');
-
+$meta['footer_start_link'] = array('onoff');
