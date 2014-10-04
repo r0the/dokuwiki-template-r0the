@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuWiki r0the Template
+ * DokuWiki ramtop Template
  *
  * @link     https://www.dokuwiki.org/template:r0the
  * @author   Anika Henke <anika@selfthinker.org>
@@ -15,6 +15,15 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 $hasMenubar = page_findnearest(tpl_getConf('menubar'));
 $showMenubar = $hasMenubar && ($ACT=='show');
 $customLicence = tpl_getConf('custom_licence');
+$siteClasses = 'site ' . tpl_classes();
+if ($hasMenubar) {
+    $siteClasses = $siteClasses . 'hasMenubar ';
+}
+
+if ($showMenubar) {
+    $siteClasses = $siteClasses . 'showMenubar ';
+}
+
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>
@@ -29,29 +38,24 @@ $customLicence = tpl_getConf('custom_licence');
 
 <body>
     <!--[if lte IE 7 ]><div id="IE7"><![endif]--><!--[if IE 8 ]><div id="IE8"><![endif]-->
-    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?> <?php
-        echo ($showMenubar) ? 'showMenubar' : ''; ?> <?php echo ($hasMenubar) ? 'hasMenubar' : ''; ?>">
-
-        <?php include('tpl_header.php') ?>
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="<?php echo ${siteClasses}; ?>">
+<?php include('tpl_header.php') ?>
 
         <div class="wrapper group">
-
-            <!-- ********** CONTENT ********** -->
             <div id="dokuwiki__content"><div class="pad group">
+                <div class="page group"><?php tpl_flush() ?>
 
-                <div class="page group">
-                    <?php tpl_flush() ?>
-                    <!-- wikipage start -->
-                    <?php tpl_content() ?>
-                    <!-- wikipage stop -->
-                </div>
+                <!-- wikipage start -->
+<?php tpl_content() ?>
 
-                <?php tpl_flush() ?>
-            </div></div><!-- /content -->
+                <!-- wikipage stop -->
+                </div><?php tpl_flush() ?>
+
+            </div></div>
 
             <hr class="a11y" />
 
-            <!-- PAGE ACTIONS -->
+            <!-- page actions -->
             <div id="dokuwiki__pagetools">
                 <h3 class="a11y"><?php echo $lang['page_tools']; ?></h3>
                 <div class="tools">
@@ -81,10 +85,10 @@ $customLicence = tpl_getConf('custom_licence');
                     </ul>
                 </div>
             </div>
-        </div><!-- /wrapper -->
+        </div>
 
-        <?php include('tpl_footer.php') ?>
-    </div></div><!-- /site -->
+<?php include('tpl_footer.php') ?>
+    </div></div>
 
     <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>
     <div id="screen__mode" class="no"></div><?php /* helper to detect CSS media query in script.js */ ?>
