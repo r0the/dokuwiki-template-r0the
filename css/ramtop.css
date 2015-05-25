@@ -107,14 +107,6 @@ td {
     overflow-x: visible;
 }
 
-.dokuwiki table.inline tr:hover td {
-    background: none;
-}
-
-.dokuwiki table.inline tr:hover th {
-    background: none;
-}
-
 .dokuwiki pre.code,
 .dokuwiki pre.file {
     background-color: #DFD;
